@@ -86,7 +86,7 @@ const unsigned char const_ControlNode = 'G';    //node number of ground station 
 //#define I2CGPS
 #define DebugNoGPS                            //test mode, does not read GPS
 //#define EnableBind                            //at startup tracker will listen for a bind packet
-//#define TestLocation                          //uses test location for GPS as defined in Flight_Settings         
+#define TestLocation                          //uses test location for GPS as defined in Flight_Settings         
 
 
 char ramv_ThisNode;
