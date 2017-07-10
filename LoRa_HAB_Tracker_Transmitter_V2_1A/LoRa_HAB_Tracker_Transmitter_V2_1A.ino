@@ -83,10 +83,10 @@ const unsigned char const_ControlNode = 'G';    //node number of ground station 
 #define ClearEEPROM                            //zero the counts held in EEPROM
 #define WriteEEPROM                            //Write initial values of changeable constants into EEPROM
 #define CalibrateTone                           //comment in to have a calibrate tone at startup
-//#define I2CGPS
-#define DebugNoGPS                            //test mode, does not read GPS
+#define I2CGPS
+//#define DebugNoGPS                            //test mode, does not read GPS
 //#define EnableBind                            //at startup tracker will listen for a bind packet
-#define TestLocation                          //uses test location for GPS as defined in Flight_Settings         
+//#define TestLocation                          //uses test location for GPS as defined in Flight_Settings         
 
 
 char ramv_ThisNode;
@@ -156,7 +156,7 @@ void loop()
 #endif
 
 #ifdef DebugNoGPS
-  delay(1000);                                              //simulate time that processor reads GPS for more accurate temperature reading
+  delay(5000);                                              //simulate time that processor reads GPS for more accurate temperature reading
 #endif
 
   for (i = 1; i <= ramv_TXnoGPSloops; i++)
@@ -243,13 +243,13 @@ void DoStuff()
     lora_TXOFF();                                             //to ensure TXTime updated correctly
   }
 
-  sleep_secs(1);                                              //allows time if required to switch receiver antenna to LoRa receiver
+  sleep_secs(5);                                              //allows time if required to switch receiver antenna to LoRa receiver
 
   init_LoRaflightTX();
   PrintPayload(Count);
 
   strip_value = readconfigByte(AddressStrip);
-  Serial.println("Lora start");
+
   lora_Send(0, Count, LongPayload, Broadcast, ramv_ThisNode, 10, lora_Power, strip_value);   //send the packet, data is in TXbuff from lora_TXStart to lora_TXEnd
   Serial.println();
 

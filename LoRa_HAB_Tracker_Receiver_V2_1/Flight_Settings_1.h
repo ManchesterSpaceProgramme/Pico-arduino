@@ -45,7 +45,7 @@ const long  adc_constant = 1109860;                             //if voltage rep
 //**************************************************************************
 
 
-const float const_FlightFrequency = 434.330;                    //flight frequency
+const float const_FlightFrequency = 434.350;                    //flight frequency
 const float const_CommandFrequency = 434.550;                   //Command and reporting frequency
 const float const_BindFrequency = 434.400;                      //bind frequency 
 

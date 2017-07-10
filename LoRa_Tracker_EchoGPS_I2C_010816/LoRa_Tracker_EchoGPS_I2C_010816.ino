@@ -89,7 +89,7 @@ void loop()
     i = Wire.read();
     if (i != 0xFF)
     {
-     Serial.println(i);
+     Serial.write(i);
     }
   }
 

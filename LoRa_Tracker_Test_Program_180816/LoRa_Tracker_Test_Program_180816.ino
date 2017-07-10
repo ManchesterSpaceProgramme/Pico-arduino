@@ -35,8 +35,8 @@ RC Servo pulse input, if the connector works for with an I2C device, that pin ha
 */
 
 
-#define PIHTracker3
-//#define Relay                         //specify PCB type
+//#define PIHTracker3
+#define Relay                         //specify PCB type
 //#define ATMEGA2560                             //commment in if using ATMEGA2560 
 #define ATMEGA328                                //commment in if using ATMEGA328 
 
@@ -277,7 +277,7 @@ void setup()
   pinMode(PLED1, OUTPUT); 			        //for PCB LED
   pinMode(PLED2, OUTPUT); 			        //for Pro Mini LED, Pin13
   pinMode(GPSPOWER, OUTPUT); 			        //for GPS Power control
-  //digitalWrite(GPSPOWER, LOW);                          //GPS on 
+  digitalWrite(GPSPOWER, LOW);                          //GPS on 
   pinMode(lora_TonePin, INPUT_PULLUP);		        //ensure tone out pin is input
   pinMode(lora_PReset, OUTPUT);			        //LoRa Device reset line
   pinMode (lora_PNSS, OUTPUT);			        //LoRa Device select line

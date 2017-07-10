@@ -119,11 +119,11 @@ void setup()
   pinMode(GPSPOWER, OUTPUT);	               //setup pin for GPS Power Control
   digitalWrite(GPSPOWER, LOW);
  
-//  Serial.begin(115200);                        //connect at 115200 so we can read the GPS fast enough and also spit it out
-//  Serial.println(F(programname));
-//  Serial.println(F(programversion));
-//  Serial.println(F(dateproduced));
-//  Serial.println(F(aurthorname));
+  Serial.begin(115200);                        //connect at 115200 so we can read the GPS fast enough and also spit it out
+  Serial.println(F(programname));
+  Serial.println(F(programversion));
+  Serial.println(F(dateproduced));
+  Serial.println(F(aurthorname));
 
   pinMode(PLED1, OUTPUT);
   led_FlashStart();

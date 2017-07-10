@@ -46,7 +46,7 @@ const byte default_attempts = 5;                     //default number of times a
 #define WriteEEPROM                                //Write initial values of changeable constants into EEPROM
 #define ReceptionReport                            //print packet type, detination and source
 #define SignalReport                               //As reception report plis SNR, RSSI, Length
-//#define AFSKUpload                                 //set if we want to upload to FLDIGI
+#define AFSKUpload                                 //set if we want to upload to FLDIGI
 
 
 //Program Variables
