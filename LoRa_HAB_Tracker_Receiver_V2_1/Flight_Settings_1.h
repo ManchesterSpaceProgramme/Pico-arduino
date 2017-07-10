@@ -4,7 +4,7 @@
 
 Easy Build LoRaTracker Programs for Arduino ATMEGA328
 
-Copyright of the author Stuart Robinson - 24/06/2016
+Copyright of the author Stuart Robinson - 04/08/2016
 
 HTTP://WWW.LORATRACKER.UK
 
@@ -45,7 +45,7 @@ const long  adc_constant = 1109860;                             //if voltage rep
 //**************************************************************************
 
 
-const float const_FlightFrequency = 434.330;                    //flight frequency
+const float const_FlightFrequency = 434.350;                    //flight frequency
 const float const_CommandFrequency = 434.550;                   //Command and reporting frequency
 const float const_BindFrequency = 434.400;                      //bind frequency 
 
@@ -79,21 +79,21 @@ const unsigned long const_ResetCount = 0;            //initial value of reset co
 const unsigned long const_SequenceNum = 1;           //initial value of sequence number
 const unsigned long const_mASecs = 0;
 const unsigned int const_TXnoGPSloops = 1;
-const unsigned int const_numSleeps = 30;             //gives approx 1 minute cycle 
+const unsigned int const_numSleeps = 10;             //gives approx 1 minute cycle 
 const unsigned int const_WaitGPSFixSeconds = 30;
 const unsigned int const_default_config = 196;
 
 const unsigned int const_FSKbaud = 9900;            //delay for baud rate for FSK RTTY, 19930 for 50baud, 9900 for 100baud, 4930 for 200baud (100baud was 9800)  
-const byte const_FSKrttyshift = 105; 		    //value to write to frequency offset register for RTTY mark shift
-const byte const_FSKrttynoshift = 99;		    //value to write to frequency offset register for RTTY space shift
+const byte const_FSKrttyshift = 105;         //value to write to frequency offset register for RTTY mark shift
+const byte const_FSKrttynoshift = 99;       //value to write to frequency offset register for RTTY space shift
 const byte const_FSKpips = 5;                       //number of FSK lead in pips
 const int  const_FSKleadin = 500;                   //number of ms for FSK constant lead in tone
 
-const char key0 = 'H';                              //goes out with EEPROM chnage packet as a protection key      
+const char key0 = 'H';                              //goes out with EEPROM change packet as a protection key      
 const char key1 = 'A';
 const char key2 = 'B';
 const char key3 = '1';
 
-#define TestLatitude 51.48230                       //Cardiff castle keep
+#define TestLatitude 51.48230                       //Cardiff castle keep, used for testing purposes
 #define TestLongitude -3.18136
 #define TestAltitude 48

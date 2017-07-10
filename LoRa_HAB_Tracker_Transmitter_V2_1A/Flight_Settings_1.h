@@ -79,7 +79,7 @@ const unsigned long const_ResetCount = 0;            //initial value of reset co
 const unsigned long const_SequenceNum = 1;           //initial value of sequence number
 const unsigned long const_mASecs = 0;
 const unsigned int const_TXnoGPSloops = 1;
-const unsigned int const_numSleeps = 30;             //gives approx 1 minute cycle 
+const unsigned int const_numSleeps = 10;             //gives approx 1 minute cycle 
 const unsigned int const_WaitGPSFixSeconds = 30;
 const unsigned int const_default_config = 196;
 
