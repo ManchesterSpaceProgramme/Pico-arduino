@@ -33,7 +33,7 @@ default settings of the tracker remotely without the need to reprogram the track
 ******************************************************************************************************
 */
 
-unsigned char Flight_ID[10] = "Miser";
+unsigned char Flight_ID[10] = "PicoChu";
 
 //**************************************************************************
 //These are the settings unique to each individual tracker transmitter board   
@@ -94,6 +94,6 @@ const char key1 = 'A';
 const char key2 = 'B';
 const char key3 = '1';
 
-#define TestLatitude 51.48230                       //Cardiff castle keep, used for testing purposes
-#define TestLongitude -3.18136
+#define TestLatitude 53.5831                  //Cardiff castle keep, used for testing purposes
+#define TestLongitude -2.2004
 #define TestAltitude 48

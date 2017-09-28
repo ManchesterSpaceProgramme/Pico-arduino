@@ -381,9 +381,9 @@ int buildLongPayload(char *lora_BUFF)
 
   snprintf(lora_BUFF,
            Output_len_max,
-           "$$$$%s%s,%d,%02d:%02d:%02d,%s,%s,%s,%d,%d,%d,%d,%d,%s",
+           "$$$$%s,%d,%02d:%02d:%02d,%s,%s,%s,%d,%d,%d,%d,%d,%s",
            Flight_ID,
-           node,
+          // node, //Removed the appending number
            seq,
            gps.time.hour(),
            gps.time.minute(),
